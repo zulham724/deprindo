@@ -1,0 +1,6 @@
+[28-Sep-2020 08:36:42 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 1
+[28-Sep-2020 08:36:42 UTC] PHP Fatal error:  Default value for parameters with a class type hint can only be NULL in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 86
+[28-Sep-2020 08:36:51 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 1
+[28-Sep-2020 08:36:51 UTC] PHP Fatal error:  Default value for parameters with a class type hint can only be NULL in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 86
+[28-Sep-2020 08:38:47 UTC] PHP Warning:  Unsupported declare 'strict_types' in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 1
+[28-Sep-2020 08:38:47 UTC] PHP Fatal error:  Default value for parameters with a class type hint can only be NULL in /home/deprindo/public_html/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php on line 86
