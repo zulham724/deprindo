@@ -84,6 +84,7 @@
 
       <script src="javascript/respond.min.js"></script>
     <![endif]-->
+    @yield('css')
   </head>
 
   <body class="header_sticky">
