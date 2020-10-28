@@ -29,7 +29,7 @@
                     <article class="entry border-shadow flat-column3 clearfix">
                         <div class="entry-border clearfix">
                             <div class="featured-post">
-                                <a href="#"> <img src="{{url('storage/'.$image->image)}}" alt="image"></a>
+                                <a href="{{url('storage/'.$image->image)}}"> <img src="{{url('storage/'.$image->image)}}" alt="image"></a>
                             </div><!-- /.feature-post -->
                         </div><!-- /.entry-border -->
                     </article>

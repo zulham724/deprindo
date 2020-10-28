@@ -518,7 +518,7 @@ class="flat-row background-nopara background-image1 section-counter"
             <article class="entry clearfix">
                 <div class="entry-border clearfix">
                 <div class="featured-post">
-                    <a href="#">
+                    <a href="{{asset('storage/'.$photo)}}">
                     <img src="{{asset('storage/'.$photo)}}" alt="image" width="500px"
                     /></a>
                 </div>
