@@ -83,7 +83,9 @@
                             $imgName = str_replace($img,'', $management->photo);
                             $img = $imgName.'-cropped'.$img;
                           @endphp
-                        <img src="{{'storage/'.$img}}" />
+                        <a href="{{'storage/'.$img}}">
+                            <img src="{{'storage/'.$img}}" />
+                        </a>
                     </div>
                     <div class="content text-center">
                         <div class="info-team">
@@ -92,7 +94,7 @@
                         </div>
                         <ul class="social-links style3 team">
                         <li>
-                            <a href="#"></a>
+                            <a href="{{'storage/'.$img}}"></a>
                         </li>
                         </ul>
                     </div>
