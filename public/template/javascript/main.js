@@ -1477,17 +1477,17 @@
 
         if (retina) {
             $(".header .logo").find("img").attr({
-                src: "http://103.134.152.2/~deprindo/template/images/deprindo.png",
-                width: "175",
-                height: "35",
+                src: "/template/images/deprindo.png",
+                width: "100",
+                height: "20",
             });
         }
 
         if (retina) {
             $(".footer .logo").find("img").attr({
-                src: "http://103.134.152.2/~deprindo/template/images/deprindo.png",
-                width: "175",
-                height: "35",
+                src: "/template/images/deprindo.png",
+                width: "100",
+                height: "20",
             });
         }
     };

@@ -389,9 +389,11 @@ style="
               <p class="position">{{$management->position}}</p>
             </div>
             <ul class="social-links style3 team">
-              <li>
+             <!--  <li>
                 <a href="{{'storage/'.$img}}"></a>
-              </li>
+              </li> -->
+               <h5 class="name">{{$management->name}}</h5>
+              <p class="name">{{$management->position}}</p>
             </ul>
           </div>
         </div>
@@ -437,9 +439,11 @@ style="
               <p class="position">{{$management->position}}</p>
             </div>
             <ul class="social-links style3 team">
-              <li>
+            <!--   <li>
                 <a href="{{'storage/'.$img}}"></a>
-              </li>
+              </li> -->
+               <h5 class="name">{{$management->name}}</h5>
+              <p class="name">{{$management->position}}</p>
             </ul>
           </div>
         </div>
@@ -485,9 +489,11 @@ style="
               <p class="position">{{$management->position}}</p>
             </div>
             <ul class="social-links style3 team">
-              <li>
+             <!--  <li>
                 <a href="{{'storage/'.$img}}"></a>
-              </li>
+              </li> -->
+               <h5 class="name">{{$management->name}}</h5>
+              <p class="name">{{$management->position}}</p>
             </ul>
           </div>
         </div>

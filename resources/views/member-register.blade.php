@@ -27,8 +27,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="margin-left40">
-                            <h1>Untuk menjadi anggota DEPRINDO selain perusahaan berbadan hukum bisa juga atas nama perorangan</h1>
-                            <p>isi Form dibawah ini untuk mendaftar Anggota, kami akan menghubungi anda untuk verifikasi kelengkapan lainnya</p>
+                            <h1>Untuk menjadi anggota DEPRINDO selain Perusahaan berbadan hukum dapat pula untuk Perorangan, baik yang sudah memiliki proyek atau yang akan memulai sebuah proyek perumahan</h1><br>
+                            <p>Hubungi langsung Sekretariat DPD/DPW yang tersedia di HALAMAN PENGURUS DPD/DPW ditingkat Propinsi atau Kabupaten/Kota. 
+Biaya Pendaftaran dan Iuran Tahunan silahkan lihat di HALAMAN BENEFIT ANGGOTA <br><br>
+
+Atau dapat mengisi Form dibawah ini untuk mendaftar secara online, berikutnya kami akan menghubungi anda untuk verifikasi kelengkapan lainnya.
+</p>
                             <form id="contactform" class="contactform style4  clearfix" method="post" action="/submit-members" novalidate="novalidate">
                                 @csrf
                                 <span class="flat-input">

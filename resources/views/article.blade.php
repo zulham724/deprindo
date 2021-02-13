@@ -32,7 +32,7 @@
                                 <a href="{{url('/detail-article?id='.$post->id)}}"> <img src="{{url('storage/'.$post->image)}}" alt="image" width="500px"></a>
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <span class="category">{{$post->category_id}}</span>
+                                <!--<span class="category">{{$post->category_id}}</span>-->
                                 <h2 class="title-post"><a href="{{url('/detail-article?id='.$post->id)}}">{{$post->title}}</a></h2>
                                 <p>{{$post->excerpt}}</p>
                                 <a href="{{url('/detail-article?id='.$post->id)}}" class="readmore">READ MORE</a>

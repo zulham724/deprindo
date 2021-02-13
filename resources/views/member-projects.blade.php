@@ -77,8 +77,8 @@
                             <a href="{{$page->link}}" target="_blank"> <img src="{{url('storage/'.$img)}}" alt="image"></a>
                         </div><!-- /.feature-post -->
                         <div class="content-post">
-                            <span class="category">{{$page->member_id}}</span>
-                            <h2 class="title-post"><a href="#">{{$page->project_name}}</a></h2>
+                            <!--<span class="category">{{$page->member_id}}</span>-->
+                            <h4 class="title-post" style="font-size:14px;"><a href="{{$page->link}}" >{{$page->project_name}}</a></h4>
                             <div class="meta-data style2 clearfix">
                                 <ul class="meta-post clearfix">
                                     <li class="day-time">

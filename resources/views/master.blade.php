@@ -90,9 +90,9 @@
   <body class="header_sticky">
     <!-- Preloader -->
 
-    <div id="loading-overlay">
-      <div class="loader"></div>
-    </div>
+    <!--<div id="loading-overlay">-->
+    <!--  <div class="loader"></div>-->
+    <!--</div>-->
 
     <!-- Boxed -->
 
@@ -117,7 +117,7 @@
               <div class="col-lg-2">
                 <div id="logo" class="logo">
                   <a href="{{url('')}}" rel="home">
-                    <img src="{{url('template/images/deprindo.png')}}" alt="image" />
+                    <img src="{{asset('template/images/deprindo.png')}}" alt="image" style="width:175px;"/>
                   </a>
                 </div>
                 <!-- /.logo -->
@@ -353,8 +353,8 @@
               <div class="copyright">
                 <p>
                   Bank Mitra KPR &nbsp&nbsp
-                    <img src="{{asset('template/images/logo-bni.png')}}" width="70px"/>
-                    <img src="{{asset('template/images/logo-btn.png')}}" width="70px"/>
+                  <a href="https://www.bni.co.id/id-id/personal/pinjaman/bnigriya"/> <img src="{{asset('template/images/logo-bni.png')}}" width="70px"/> </a>&nbsp&nbsp&nbsp&nbsp
+                   <a href="https://www.btn.co.id/id/Conventional/Product-Links/Produk-BTN/Kredit-Konsumer/Pinjaman-Bangunan/KPR-BTN-Subsidi"/> <img src="{{asset('template/images/logo-btn.png')}}" width="70px"/></a>
                 </p>
               </div>
             </div>

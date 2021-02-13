@@ -98,7 +98,7 @@ Route::get('/list_servicepartners', [
                     return Str::contains($row['regency_id'], $request->get('regency_id')) ? true : false;
                 });
             }
-        })->addIndexColumn()
+        })
         ->make(true);
     }
 ]);
@@ -145,7 +145,7 @@ Route::post('/submit-partner', [DeprindoController::class,'submit_partner']);
 Route::get('/list_lands', [
     'as'   => 'list_lands',
     'uses' => function (Request $request) {
-        $lands = App\Land::with('province_loc','regency_loc')->where('status','1')->get();
+        $lands = App\Land::with('province_loc','regency_loc')->where('status','1')->orderBy('id', 'desc')->get();
         return DataTables::of($lands)
             ->filter(function ($instance) use ($request) {
             if (!empty($request->get('province_id'))) {
@@ -232,4 +232,8 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('activate_user', [DeprindoController::class,'activate_user' ])->name('activate_user');
     Route::get('delete_user', [DeprindoController::class,'delete_user' ])->name('delete_user');
 
+});
+
+Route::get('/test',function(){
+return asset('template/images/deprindo.png');
 });

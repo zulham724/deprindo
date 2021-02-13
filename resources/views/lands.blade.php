@@ -65,7 +65,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
+                                    <th>Rekom Anggota</th>
                                     <th>Provinsi</th>
                                     <th>Kota</th>
                                     <th>Luas(m<sup>2</sup>)</th>
@@ -100,7 +100,7 @@
                 }
             },
             columns: [
-                {data: 'id', name: 'id'},
+                {data: 'id', name: 'id' },
                 {data: 'owner', name: 'owner'},
                 {data: 'province_loc.name', name: 'province_location'},
                 {data: 'regency_loc.name', name: 'regency_location'},
@@ -108,16 +108,16 @@
                 {data: 'letter', name: 'letter'},
                 {data: 'type', name: 'type'},
                 {data: 'price', name: 'price'},
-                @guest
-                {data: null,
-                    defaultContent: "<p>Login untuk lihat</p>"},
-                @endguest
-                @auth
-                {data: 'no_hp', name: 'no_hp'},
-                @endauth
+                {data: 'no_hp', name: 'no_hp'}
             ],
             scrollX: true,
+            order: [[ 0, "desc" ]]
         });
+        memberTable.on( 'order.dt search.dt', function () {
+            memberTable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                cell.innerHTML = i+1;
+            } );
+        } ).draw();
         $('#search-form').on('submit', function(e) {
             memberTable.draw();
             e.preventDefault();

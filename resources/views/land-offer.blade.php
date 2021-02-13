@@ -27,11 +27,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="margin-left40">
-                            <h1>Tawarkan Lahan Anda !</h1>
-                            <p>Isi form ini untuk menawarkan lahan anda.</p>
+                            <h1>Pemilik Lahan, Kuasa Jual Lahan yang ingin Lahannya  tampil dihalaman LISTING LAHAN Wajib mendapatkan Rekomendasi dari anggota Deprindo</h1><br>
+                            <p>Bagi Pemilik Lahan atau Kuasa Jual Lahan yang yang ingin Lahannya ditawarkan ke anggota Deprindo dan tampil dihalaman LISTING LAHAN dapat menghubungi langsung Sekretariat DPD/DPW yang tersedia di HALAMAN PENGURUS DPD/DPW ditingkat Propinsi atau Kabupaten/Kota. 
+<br><br>
+Bagi anggota Deprindo yang menawarkan Lahan silahkan isi Form dibawah ini dan jangan lupa ketik Nama Anggota serta DPD/DPW anggota
+</p>
                             <form id="contactform" class="contactform style4  clearfix" method="post" action="/submit-land" novalidate="novalidate">
                                 @csrf
-                                <span class="flat-input"><input name="name" type="text" value="" placeholder="Nama*" required="required"></span>
+                                <span class="flat-input"><input name="name" type="text" value="" placeholder="Nama Rekom Anggota + DPD/DPW*" required="required"></span>
                                 
                                 <span class="flat-input"><input name="large" type="number" value="" placeholder="Luas Lahan ()*" required="required"></span>
                                 <span class="flat-input">

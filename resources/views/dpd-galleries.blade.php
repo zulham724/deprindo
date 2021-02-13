@@ -66,13 +66,12 @@
                     </div>
                 </div>
             </div>
-            <div class="post-wrap post-grid wrap-column clearfix">
+            <div class="post-wrap post-grid row clearfix">
                 @foreach ($images as $image)
-                    <article class="entry border-shadow flat-column3 clearfix">
+                    <article class="entry border-shadow col-md-4 clearfix">
                         <div class="entry-border clearfix">
                             <div class="featured-post">
-                                <a href="{{ url('storage/' . $image->image) }}" data-lightbox="images"> <img
-                                        src="{{ url('storage/' . $image->image) }}" alt="image"></a>
+                                <a href="{{ url('storage/' . $image->image) }}" data-lightbox="images"> <img style="height:300px;width:100%" src="{{ url('storage/' . $image->image) }}" alt="image"></a>
                             </div><!-- /.feature-post -->
                             <div class="content-post">
                                 <span class="category">{{ $image->type }}
@@ -109,8 +108,7 @@
             })
             $('#province').on('change', function() {
                 $.ajax({
-                    url: '{{ route('
-                    areas ') }}',
+                    url: '{{ route('areas') }}',
                     method: 'POST',
                     data: {
                         _token: "{{ csrf_token() }}",

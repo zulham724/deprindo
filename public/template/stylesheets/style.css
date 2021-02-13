@@ -6174,7 +6174,7 @@ h6 { font-size: 16px; line-height: 18px; }
 
 .parallax4 { background-image: url('../images/parallax/4.jpg'); }
 
-.parallax5 { background-image: url('../images/parallax/5.jpg'); }
+.parallax5 { /*background-image: url('../images/parallax/5.jpg');*/ }
 
 .parallax6 { background-image: url('../images/slides/6.jpg'); }
 

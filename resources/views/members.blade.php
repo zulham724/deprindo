@@ -103,13 +103,7 @@
                 {data: 'company', name: 'company'},
                 {data: 'province.name', name: 'province_id'},
                 {data: 'regency.name', name: 'regency_id'},
-                @guest
-                {data: null,
-                    defaultContent: "<p>Login untuk lihat</p>"},
-                @endguest
-                @auth
-                {data: 'no_hp', name: 'no_hp'},
-                @endauth
+                {data: 'no_hp', name: 'no_hp'}
             ],
             scrollX: true,
         });

@@ -32,7 +32,7 @@
                                 <a href="{{url('/detail-news?id='.$page->id)}}"> <img src="{{url('storage/'.$page->image)}}" alt="image"></a>
                             </div><!-- /.feature-post -->
                             <div class="content-post">
-                                <span class="category">{{$page->author_id}}</span>
+                                <!--<span class="category">{{$page->author_id}}</span>-->
                                 <h2 class="title-post"><a href="{{url('/detail-news?id='.$page->id)}}">{{$page->title}}</a></h2>
                                 <div class="meta-data style2 clearfix">
                                     <ul class="meta-post clearfix">

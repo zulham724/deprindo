@@ -77,8 +77,8 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Perusahaan</th>
+                                    <th>Nama Mitra</th>
+                                    <th>Rekom Anggota</th>
                                     <th>Kategori</th>
                                     <th>Provinsi</th>
                                     <th>Kota</th>
@@ -118,16 +118,16 @@
                 {data: 'partner_category.name', name: 'partner_category_id'},
                 {data: 'province.name', name: 'province_id'},
                 {data: 'regency.name', name: 'regency_id'},
-                @guest
-                    {data: null,
-                    defaultContent: "<p>Login untuk lihat</p>"},
-                @endguest
-                @auth
-                    {data: 'no_hp', name: 'no_hp'},
-                @endauth
+                {data: 'no_hp', name: 'no_hp'}
             ],
             scrollX: true,
+            order: [[ 0, "desc" ]]
         });
+        memberTable.on( 'order.dt search.dt', function () {
+            memberTable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                cell.innerHTML = i+1;
+            } );
+        } ).draw();
         $('#search-form').on('submit', function(e) {
             memberTable.draw();
             e.preventDefault();

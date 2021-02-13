@@ -16,13 +16,13 @@ class DeprindoController extends Controller
 {
     public function article()
     {
-        $posts = DB::table('posts')->simplePaginate(5);
+        $posts = DB::table('posts')->orderBy('id','desc')->simplePaginate(5);
         return view('article',['posts'=>$posts]);
     }
 
     public function news()
     {
-        $pages = DB::table('pages')->simplePaginate(6);
+        $pages = DB::table('pages')->orderBy('id','desc')->simplePaginate(6);
         return view('news',['pages'=>$pages]);
     }
 
@@ -56,15 +56,15 @@ class DeprindoController extends Controller
     public function member_projects(Request $request)
     {
          if($request->has('regency') && $request->get('regency')!='all'){
-            $pages = DB::table('projects')->where('regency_id',$request->get('regency'))->simplePaginate(6);
+            $pages = DB::table('projects')->where('regency_id',$request->get('regency'))->orderBy('id','desc')->simplePaginate(6);
             $selected_prov = $request->get('province');
             $selected_reg = $request->get('regency');
         }elseif($request->has('province') && $request->get('regency')=='all'){
-            $pages = DB::table('projects')->where('province_id',$request->get('province'))->simplePaginate(6);
+            $pages = DB::table('projects')->where('province_id',$request->get('province'))->orderBy('id','desc')->simplePaginate(6);
             $selected_prov = $request->get('province');
             $selected_reg = $request->get('regency');
         }else{
-            $pages = DB::table('projects')->simplePaginate(5);
+            $pages = DB::table('projects')->orderBy('id','desc')->simplePaginate(6);
             $selected_prov = '';
             $selected_reg = '';
         }

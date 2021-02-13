@@ -27,12 +27,15 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="margin-left40">
-                            <h1>Mari Bergabung Bersama Kami !</h1>
-                            <p>Isilah form dibawah ini untuk mendaftar jadi mitra</p>
+                            <h1>Perusahaan Barang dan Jasa yang ingin menjadi MITRA dan Nama Perusahaanya  tampil dihalaman INFO MITRA Wajib mendapatkan Rekomendasi dari anggota Deprindo</h1> <br>
+                            <p>Bagi Perusahaan Barang & Jasa yang ingin menjadi MITRA dapat menghubungi langsung Sekretariat DPD/DPW yang tersedia di HALAMAN PENGURUS DPD/DPW ditingkat Propinsi atau Kabupaten/Kota.<br>
+<br>
+Bagi anggota Deprindo yang akan merekomendasikan MITRA Perusahaan Barang & Jasa silahkan isi Form dibawah ini dan jangan lupa ketik Nama Anggota serta DPD/DPW anggota
+</p>
                             <form id="contactform" class="contactform style4  clearfix" method="post" action="/submit-partner" novalidate="novalidate">
                                 @csrf
-                                <span class="flat-input"><input name="name" type="text" value="" placeholder="Nama*" required="required"></span>
-                                <span class="flat-input"><input name="company" type="text" value="" placeholder="Perusahaan" ></span>
+                                <span class="flat-input"><input name="name" type="text" value="" placeholder="Nama Mitra*" required="required"></span>
+                                <span class="flat-input"><input name="company" type="text" value="" placeholder="Nama Rekom Anggota + DPD/DPW*" required="required" ></span>
                                 <span class="flat-input">
                                     <select name="province" id="province" class="form-control" style="margin-bottom: 30px">
                                         <option value="">== Pilih Provinsi* ==</option>

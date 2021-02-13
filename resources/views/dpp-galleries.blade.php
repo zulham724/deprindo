@@ -16,8 +16,8 @@
                     </div><!-- /.page-title-captions -->
                     <div class="breadcrumbs">
                         <ul>
-                            <li class="home"><i class="fa fa-home"></i><a href="index.html">Beranda</a></li>
-                            <li><a href="new-fullwidth.html">Gallery</a></li>
+                            <li class="home"><i class="fa fa-home"></i><a href="{{url('/')}}">Beranda</a></li>
+                            <li><a href="#">Gallery</a></li>
                             <li>Gallery DPP</li>
                         </ul>
                     </div><!-- /.breadcrumbs -->
@@ -29,14 +29,17 @@
     <!-- Blog posts -->
     <section class="flat-row blog-grid">
         <div class="container">
-            <div class="post-wrap post-grid wrap-column clearfix">
-                @foreach ($images as $image)
-                    <article class="entry border-shadow flat-column3 clearfix">
-                        <div class="entry-border clearfix">
+            <div class="post-wrap post-grid row clearfix">
+               @foreach ($images as $image)
+                    <article class="entry border-shadow col-md-4 clearfix">
+                        <div class="entry-border clearfix" style="">
                             <div class="featured-post">
-                                <a href="{{ url('storage/' . $image->image) }}" data-lightbox="images"> <img
-                                        src="{{ url('storage/' . $image->image) }}" alt="image"></a>
+                                <a href="{{url('storage/'.$image->image)}}"> <img style="height:300px;width:100%" src="{{url('storage/'.$image->image)}}" alt="image"></a>
                             </div><!-- /.feature-post -->
+                            <div class="content-post">
+                                <h5 class="title-post" style="font-size:12px;">{{$image->description}}</h5>
+                                
+                            </div><!-- /.contetn-post -->
                         </div><!-- /.entry-border -->
                     </article>
                 @endforeach
