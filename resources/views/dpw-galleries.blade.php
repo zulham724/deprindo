@@ -75,7 +75,7 @@
                             <div class="content-post">
                                 <span class="category">{{ $image->type }} |
                                     {{ $image->province ? '| ' . $image->province->name : '' }}</span>
-                                <h2 class="title-post"><a href="#">{{ $image->description }}</a></h2>
+                                <h2 style="font-size:12px;" class="title-post"><a href="#">{{ $image->description }}</a></h2>
                                 <div class="meta-data style2 clearfix">
                                     <ul class="meta-post clearfix">
                                         <li class="day-time">
